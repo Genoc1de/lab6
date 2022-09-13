@@ -20,5 +20,5 @@ from blog import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.BlogListView.as_view()),
-    path('post/<int:id>/', views.DetailView.as_view(), name='post_detail')
+    path('post/<int:id>/', views.BlogDetailView.as_view(), name='post_detail')
 ]
